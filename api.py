@@ -5,7 +5,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
 import pickle
 import uvicorn
-import shap
 from sklearn.preprocessing import LabelEncoder
 
 # Create a FastAPI instance
