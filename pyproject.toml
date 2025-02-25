@@ -2,7 +2,6 @@
 name = "scoring-p7-opc"
 version = "0.1.0"
 description = ""
-authors = ["Béatrice FOPOUSSI KAMGA <beatrice.fopoussikamga@orange.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -20,8 +19,7 @@ imbalanced-learn = "^0.13.0"
 xgboost = "^2.1.4"
 numpy = "^2.2.3"
 uvicorn = "^0.34.0"
-shap = "^0.41.0"  
-
+shap = "^0.41.0"
 
 [build-system]
 requires = ["poetry-core"]
