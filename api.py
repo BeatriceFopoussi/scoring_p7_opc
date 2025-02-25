@@ -13,8 +13,8 @@ app = FastAPI()
 # Loading the model and data
 model = pickle.load(open('models.pkl', 'rb'))  # Chargement du pipeline complet
 
-data = pd.read_csv('test_data.csv')
-data_train = pd.read_csv('train_data.csv')
+data = pd.read_csv('data_test.csv')
+data_train = pd.read_csv('data_train.csv')
 
 # Traitement des données
 cols = data.select_dtypes(['float64']).columns
