@@ -11,7 +11,7 @@ from sklearn.preprocessing import LabelEncoder
 app = FastAPI()
 
 # Loading the model and data
-model = pickle.load(open('model.pkl', 'rb'))  # Chargement du pipeline complet
+model = pickle.load(open('models.pkl', 'rb'))  # Chargement du pipeline complet
 
 data = pd.read_csv('test_data.csv')
 data_train = pd.read_csv('train_data.csv')
