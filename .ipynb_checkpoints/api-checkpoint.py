@@ -25,6 +25,8 @@ cols = data_train.select_dtypes(['float64']).columns
 data_train_scaled = data_train.copy()
 data_train_scaled[cols] = StandardScaler().fit_transform(data_train[cols])
 
+# Initialisation de l'explainer SHAP pour le classificateur
+explainer = shap.TreeExplainer(model.named_steps['classifier'])  # Utilisation du classificateur dans le pipeline
 
 # Functions
 @app.get('/')
