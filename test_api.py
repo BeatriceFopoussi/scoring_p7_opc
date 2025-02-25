@@ -23,7 +23,7 @@ def test_check_client_id():
 
 def test_check_client_id_2():
     """Test la fonction check_client_id() de l'API avec un client inexistant."""
-    url = "/check_client_id/396899"
+    url = "/check_client_id/396891"
     response = client.get(url)
     assert response.status_code == 200
     assert response.json() is False
