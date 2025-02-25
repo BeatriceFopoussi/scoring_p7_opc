@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "scoring-p7-opc"
+version = "0.1.0"
+description = ""
+authors = ["Béatrice FOPOUSSI KAMGA <beatrice.fopoussikamga@orange.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.1"
+seaborn = "^0.13.2"
+plotly = "^6.0.0"
+mlflow = "^2.20.2"
+missingno = "^0.5.2"
+lightgbm = "^4.6.0"
+pytest = "^8.3.4"
+fastapi = "^0.115.8"
+imbalanced-learn = "^0.13.0"
+xgboost = "^2.1.4"
+numpy = "^2.2.3"
+uvicorn = "^0.34.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
