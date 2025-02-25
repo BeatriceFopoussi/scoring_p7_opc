@@ -2,6 +2,8 @@
 name = "scoring-p7-opc"
 version = "0.1.0"
 description = ""
+authors = ["Béatrice FOPOUSSI <fkamga11@gmail.com>"]
+
 readme = "README.md"
 
 [tool.poetry.dependencies]
