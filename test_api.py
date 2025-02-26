@@ -6,7 +6,7 @@ import json
 from api import app
 
 client = TestClient(app)
-API_URL = "http://127.0.0.1:8001/"  # Définir l'URL de l'API si nécessaire
+API_URL = "http://0.0.0.0:8001/"  # Définir l'URL de l'API si nécessaire
 
 def test_read_main():
     """Test l'endpoint racine de l'API."""
