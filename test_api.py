@@ -5,9 +5,6 @@ from fastapi import status
 import json
 from api import app
 
-client = TestClient(app)
-API_URL = "http://0.0.0.0:8001/"  # Définir l'URL de l'API si nécessaire
-
 def test_read_main():
     """Test l'endpoint racine de l'API."""
     response = client.get("/")
@@ -35,6 +32,18 @@ def test_get_prediction():
     assert response.status_code == 200
     assert isinstance(response.json(), float)  # Vérifier que c'est bien un float
     assert 0 <= response.json() <= 1  # La probabilité doit être entre 0 et 1
+
+
+def test_get_shap_values():
+    """Test de la fonction get_shap_values() de l'API."""
+    url = "/interpretabilite/396899"
+    response = client.get(url)
+
+    # Vérifiez le statut de la réponse
+    assert response.status_code == 200
+    # Afficher les valeurs SHAP
+    shap_values = response.json()
+    print("SHAP Values:", shap_values)
 
 import unittest
 

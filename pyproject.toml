@@ -1,14 +1,17 @@
 [tool.poetry]
-name = "scoring-p7-opc"
+name = "sc"
 version = "0.1.0"
 description = ""
-authors = ["Béatrice FOPOUSSI <fkamga11@gmail.com>"]
-
+authors = ["Votre Nom"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
+numpy = "^1.26.0"
 pandas = "^2.2.3"
+numba = "^0.58.0"  # Version mise à jour pour supporter numpy 1.26
+ipykernel = "^6.29.5"
+llvmlite = "^0.41.0"  # Mise à jour pour correspondre à numba 0.58
 scikit-learn = "^1.6.1"
 seaborn = "^0.13.2"
 plotly = "^6.0.0"
@@ -19,9 +22,9 @@ pytest = "^8.3.4"
 fastapi = "^0.115.8"
 imbalanced-learn = "^0.13.0"
 xgboost = "^2.1.4"
-numpy = "^2.2.3"
 uvicorn = "^0.34.0"
 shap = "^0.41.0"
+
 
 [build-system]
 requires = ["poetry-core"]
