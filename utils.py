@@ -8,6 +8,7 @@ import seaborn as sns
 from sklearn import metrics
 
 
+
 def preprocess_data_with_mlflow(app_train, app_test):
     # Démarrer une expérience MLflow
     mlflow.set_experiment("risque de crédit")
