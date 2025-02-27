@@ -1,6 +1,6 @@
-numpy==1.26.0
+numpy>=1.23.2,<1.26
 pandas==2.2.3
-numba==0.58.0
+numba>=0.58.0,<0.59
 ipykernel==6.29.5
 llvmlite==0.41.0
 scikit-learn==1.6.1
